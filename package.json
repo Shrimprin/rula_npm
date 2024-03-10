@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "type": "module",
   "description": "rulaは人間工学評価ツール「RULA」を行えるアプリケーションです。<br>作業者の姿勢を入力することで、作業の負担を評価できます。",
-  "main": "bin/rula.js",
+  "main": "bin/index.js",
   "bin": {
-    "rula": "bin/rula.js"
+    "rula": "bin/index.js"
   },
   "directories": {
     "lib": "lib"
