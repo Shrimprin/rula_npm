@@ -1,0 +1,64 @@
+{
+  "upperArm": {
+    "angle": {
+      "message": "上腕のの角度はどれに当てはまりますか？",
+      "choices": [
+        {
+          "description": "20度伸展～20度屈曲",
+          "score": 1
+        },
+        {
+          "description": "20度を超える伸展、または20～45度の屈曲",
+          "score": 2
+        },
+        {
+          "description": "45～90度の屈曲",
+          "score": 3
+        },
+        {
+          "description": "90度以上の屈曲",
+          "score": 4
+        }
+      ]
+    },
+    "shoulderElevation": {
+      "message": "肩の挙上はありますか？",
+      "choices": [
+        {
+          "description": "はい",
+          "score": 1
+        },
+        {
+          "description": "いいえ",
+          "score": 0
+        }
+      ]
+    },
+    "upperArmAbduction": {
+      "message": "上腕に10度以上の外転はありますか？",
+      "choices": [
+        {
+          "description": "はい",
+          "score": 1
+        },
+        {
+          "description": "いいえ",
+          "score": 0
+        }
+      ]
+    },
+    "armSupport": {
+      "message": "腕の支えはありますか？",
+      "choices": [
+        {
+          "description": "はい",
+          "score": -1
+        },
+        {
+          "description": "いいえ",
+          "score": 0
+        }
+      ]
+    }
+  }
+}
