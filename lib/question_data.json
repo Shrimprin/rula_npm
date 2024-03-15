@@ -1,10 +1,10 @@
 {
   "upperArm": {
     "angle": {
-      "message": "上腕のの角度はどれに当てはまりますか？",
+      "message": "上腕の角度はどれに当てはまりますか?",
       "choices": [
         {
-          "description": "20度伸展～20度屈曲",
+          "description": "20度の伸展～20度の屈曲",
           "score": 1
         },
         {
@@ -22,7 +22,7 @@
       ]
     },
     "shoulderElevation": {
-      "message": "肩の挙上はありますか？",
+      "message": "肩の挙上はありますか?",
       "choices": [
         {
           "description": "はい",
@@ -35,7 +35,7 @@
       ]
     },
     "upperArmAbduction": {
-      "message": "上腕に10度以上の外転はありますか？",
+      "message": "上腕に10度以上の外転はありますか?",
       "choices": [
         {
           "description": "はい",
@@ -48,15 +48,235 @@
       ]
     },
     "armSupport": {
-      "message": "腕の支えはありますか？",
+      "message": "腕の支えはありますか?",
       "choices": [
         {
           "description": "はい",
-          "score": -1
+          "score": 1
         },
         {
           "description": "いいえ",
           "score": 0
+        }
+      ]
+    }
+  },
+  "forearm": {
+    "angle": {
+      "message": "前腕の角度はどれに当てはまりますか?",
+      "choices": [
+        {
+          "description": "60～100度の屈曲",
+          "score": 1
+        },
+        {
+          "description": "60度未満の屈曲あるいは100度を超える屈曲",
+          "score": 2
+        }
+      ]
+    },
+    "reach": {
+      "message": "作業者を上から見て、体の反対側や体の外側に手を伸ばしていますか?",
+      "choices": [
+        {
+          "description": "はい",
+          "score": 1
+        },
+        {
+          "description": "いいえ",
+          "score": 0
+        }
+      ]
+    }
+  },
+  "wrist": {
+    "angle": {
+      "message": "手首の角度はどれに当てはまりますか?",
+      "choices": [
+        {
+          "description": "掌屈も背屈もない",
+          "score": 1
+        },
+        {
+          "description": "15度未満の掌屈あるいは背屈",
+          "score": 2
+        },
+        {
+          "description": "15度以上の掌屈あるいは背屈",
+          "score": 3
+        }
+      ]
+    },
+    "horizontalBending": {
+      "message": "橈屈・尺屈はありますか?",
+      "choices": [
+        {
+          "description": "はい",
+          "score": 1
+        },
+        {
+          "description": "いいえ",
+          "score": 0
+        }
+      ]
+    }
+  },
+  "wristTwist": {
+    "angle": {
+      "message": "手首のひねりの角度はどれに当てはまりますか?",
+      "choices": [
+        {
+          "description": "中間位付近の回内・回外",
+          "score": 1
+        },
+        {
+          "description": "最大あるいはその付近まで回内あるいは回外",
+          "score": 2
+        }
+      ]
+    }
+  },
+  "neck": {
+    "angle": {
+      "message": "頸部の角度はどれに当てはまりますか?",
+      "choices": [
+        {
+          "description": "0～10度の前屈",
+          "score": 1
+        },
+        {
+          "description": "10～20度の前屈",
+          "score": 2
+        },
+        {
+          "description": "20度以上の前屈",
+          "score": 3
+        }
+      ]
+    },
+    "twist": {
+      "message": "頸部のひねり10度以上ありますか?",
+      "choices": [
+        {
+          "description": "はい",
+          "score": 1
+        },
+        {
+          "description": "いいえ",
+          "score": 0
+        }
+      ]
+    },
+    "bending": {
+      "message": "頸部の側屈が10度以上ありますか?",
+      "choices": [
+        {
+          "description": "はい",
+          "score": 1
+        },
+        {
+          "description": "いいえ",
+          "score": 0
+        }
+      ]
+    }
+  },
+  "trunk": {
+    "angle": {
+      "message": "体幹の角度はどれに当てはまりますか?",
+      "choices": [
+        {
+          "description": "前屈がない、あるいは座位でも背もたれや机で体幹が支えられている",
+          "score": 1
+        },
+        {
+          "description": "20度以下の前屈",
+          "score": 2
+        },
+        {
+          "description": "20～60度の前屈",
+          "score": 3
+        },
+        {
+          "description": "60度以上の前屈",
+          "score": 4
+        }
+      ]
+    },
+    "twist": {
+      "message": "体幹のひねりが10度以上ありますか?",
+      "choices": [
+        {
+          "description": "はい",
+          "score": 1
+        },
+        {
+          "description": "いいえ",
+          "score": 0
+        }
+      ]
+    },
+    "bending": {
+      "message": "体幹の側屈が10度以上ありますか?",
+      "choices": [
+        {
+          "description": "はい",
+          "score": 1
+        },
+        {
+          "description": "いいえ",
+          "score": 0
+        }
+      ]
+    }
+  },
+  "leg": {
+    "supported": {
+      "message": "下肢あるいは足で体がよく支えられてバランスが取れていますか?",
+      "choices": [
+        {
+          "description": "はい",
+          "score": 1
+        },
+        {
+          "description": "いいえ",
+          "score": 2
+        }
+      ]
+    }
+  },
+  "workload": {
+    "holdOrRepeat": {
+      "message": "以下のいずれかに当てはまりますか？¥n* 保持姿勢(1分間より長い時間、同じ姿勢を保持する作業)ですか?¥n* 反復作業(毎分4回より高い頻度で作業を繰り返す)ですか?",
+      "choices": [
+        {
+          "description": "はい",
+          "score": 1
+        },
+        {
+          "description": "いいえ",
+          "score": 0
+        }
+      ]
+    },
+    "weight": {
+      "message": "取り扱い物や力発揮ははどれに当てはまりますか?",
+      "choices": [
+        {
+          "description": "力発揮がほぼないか、2kg未満の取り扱い物を断続的に扱う",
+          "score": 0
+        },
+        {
+          "description": "2～10kgの取り扱い物や力発揮を断続的に行う",
+          "score": 1
+        },
+        {
+          "description": "2～10kgの静的な荷重（荷物保持など）または、2～10kgの反復的な荷重がかかる",
+          "score": 2
+        },
+        {
+          "description": "10kg以上の静的な荷重、10kg以上の反復荷重がかかる、あるいは衝撃力がかかる",
+          "score": 3
         }
       ]
     }

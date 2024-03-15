@@ -7,7 +7,14 @@ import { join } from "path";
 import { Rula } from "../lib/rula.js";
 
 const rula = new Rula();
-await rula.result();
+await rula.recordScore();
+// rula.result();
+
+// import { QuestionController } from "../lib/question_controller.js";
+// QuestionController.importQuestionData();
+// const answers = await QuestionController.promptQuestions("upperArm");
+// console.log("#####");
+// console.log(answers);
 
 // const packageJson = JSON.parse(
 //   readFileSync(join(__dirname, "package.json"), "utf-8"),

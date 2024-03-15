@@ -1,22 +1,22 @@
 [
   {
-    "action_level": 1,
-    "grand_score": [1, 2],
+    "actionLevel": 1,
+    "grandScore": [1, 2],
     "judgement": "長時間持続しないのであれば、この作業姿勢は容認可能です。"
   },
   {
-    "action_level": 2,
-    "grand_score": [3, 4],
+    "actionLevel": 2,
+    "grandScore": [3, 4],
     "judgement": "さらなる調査が必要で、改善がおそらく必要です。"
   },
   {
-    "action_level": 3,
-    "grand_score": [5, 6],
+    "actionLevel": 3,
+    "grandScore": [5, 6],
     "judgement": "調査して改善が必要です。"
   },
   {
-    "action_level": 4,
-    "grand_score": [7],
+    "actionLevel": 4,
+    "grandScore": [7],
     "judgement": "調査と改善が直ちに必要です。"
   }
 ]
