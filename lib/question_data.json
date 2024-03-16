@@ -52,7 +52,7 @@
       "choices": [
         {
           "description": "はい",
-          "score": 1
+          "score": -1
         },
         {
           "description": "いいえ",
