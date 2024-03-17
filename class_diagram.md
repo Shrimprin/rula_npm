@@ -1,82 +1,51 @@
 ```mermaid
 classDiagram
   class Rula {
+    -judgementData
+    -upperLimb
+    -neckTrunkLeg
+    +recordScore()
     +result()
-    +grandScore
+    -calcGrandScore()
+    -calcIndex()
   }
 
-  class CommandController {
-
-  }
-
-  class Part {
-    +angle()
-    +score(angle, prompt)
+  class AssessmentBlock {
+    -score
+    -assessmentParts
+    +get score()
+    +get assessmentParts()
+    +recordScores()
+    +calcScore()
+    -calcRowIndex()
+    -calcColumnIndex()
   }
 
   class UpperLimb {
-    +score()
-    +upperArm
-    +forearm
-    +wrist
-    +workload
-  }
-
-  class UpperArm {
-    +isShoulderElevation
-    +isUpperArmAbduction
-    +isArmSupport
-  }
-
-  class Forearm {
-    +isReach
-  }
-
-  class List {
-    +isHorizontalBending
-  }
-
-  class ListTwist {
-
   }
 
   class NeckTrunkLeg {
-    +score()
-    +neck
-    +trunk
-    +leg
   }
 
-  class Neck {
-    +isTwist
-    +isBending
+  class AssessmentPart {
+    -score
+    -partName
+    -answers
+    +get score()
+    +question()
   }
 
-  class Trunk {
-    +isTwist
-    +isBending
+  class QuestionController {
+    -questionData$
+    +importQuestionData$()
+    +promptQuestion$()
   }
 
-  class Leg {
-
-  }
-
-  class Workload {
-
-  }
-
-  CommandController --> Rula
   Rula *-- UpperLimb
   Rula *-- NeckTrunkLeg
-  UpperLimb *-- UpperArm
-  UpperLimb *-- Forearm
-  UpperLimb *-- List
-  UpperLimb *-- ListTwist
-  UpperLimb *-- Workload
-  NeckTrunkLeg *-- Neck
-  NeckTrunkLeg *-- Trunk
-  NeckTrunkLeg *-- Leg
-  NeckTrunkLeg *-- Workload
-
-
+  UpperLimb *-- AssessmentPart
+  NeckTrunkLeg *-- AssessmentPart
+  AssessmentBlock <|-- UpperLimb
+  AssessmentBlock <|-- NeckTrunkLeg
+  QuestionController <.. AssessmentPart
 ```
