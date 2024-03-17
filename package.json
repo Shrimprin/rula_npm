@@ -6,9 +6,6 @@
   "bin": {
     "rula": "bin/index.js"
   },
-  "directories": {
-    "lib": "lib"
-  },
   "keywords": [
     "rula",
     "ergonomics"
