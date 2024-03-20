@@ -1,6 +1,6 @@
 {
   "name": "rula",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "description": "rulaは人間工学評価ツール「RULA」を行えるアプリケーションです。<br>作業者の姿勢を入力することで、作業の負担を評価できます。",
   "bin": {
